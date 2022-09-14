@@ -5,10 +5,10 @@
 
 main{
   display: flex;
-  gap: 20px;
-  padding: 20px;
-  width: 800px;
-  margin: 0 auto;
+  gap: 20px; /* Relação de espaço entre os itens do conteiner */
+  padding: 20px; /* Relação de espaço interno de um conteúdo */
+  width: 800px; /* Relação de largura do conteúdo */
+  margin: 0 auto; /* Trabalha em conjunto com o comando width para relacionar a proporção de tamanho na tela */
   background-color: orange;
 }
 
@@ -26,13 +26,17 @@ section{
 }
 
 #section-2{
+  flex-grow: 32; /* Para flex-grow não precisa utilizar px, é número direto */
 }
 
 #section-3{
+  flex-grow: 48; /* Para flex-grow não precisa utilizar px, é número direto */
 }
 
 #section-4{
+  flex-basis: 200px;
 }
 
 #section-5{
+  order: -1;
 }
